@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Administrador Simplificado</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+<h1>Cadastro de Administrador Simplificado</h1>
+<div id="divMensagem" role="alert" aria-live="assertive"></div>
+<div>
+<form id="formCadAdm">
+<label for="txtNome">
+* Nome Completo:
+</label>
+<input type="text" id="txtNome"/>
+</div>
+<div>
+<label for="txtEmail">
+* Email:
+</label>
+<input type="text" id="txtEmail"/>
+</div>
+<div>
+<label for="senha">
+* Senha:
+<input type="password" id="txtSenha"/>
+</label>
+</div>
+
+<div>
+<button type="submit" id="btnSubmit" style="margin: 10px;">CADASTRAR</button>
+</div>
+
+</form>
+</div>
+
+<script type="module" src="dist/cadAdmSimplificado.js"></script>
+<a href="gestaoUsuarios.html" class="btn-voltar">VOLTAR</a>    
+</body>
+</html>

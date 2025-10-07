@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuarios</title>
+    <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body>
+<h1>Formulario de Cadastro de Usuarios</h1>
+<form id="formCadUsuario">
+<div id="divMensagem" role="alert" aria-live="assertive"></div>
+<div>
+<label for="txtNome">
+* Nome Completo:
+</label>
+<input type="text" id="txtNome"/>
+</div>
+<div>
+<label for="txtEmail">
+* Email:
+</label>
+<input type="text" id="txtEmail"/>
+</div>
+<div>
+<label for="senha">
+* Senha:
+<input type="password" id="txtSenha"/>
+</label>
+</div>
+<div>
+<label for="txtConfSenha">
+* Confirmar Senha:
+</label>
+<input type="password" id="txtConfSenha"/>
+</div>
+<div>
+<label for="txtTelefone">
+* Telefone:
+</label>
+<input type="tel" id="txtTelefone">
+</div>
+<div>
+<label for="txtNascimento">
+* Data de nascimento:
+<input type="date" id="txtNascimento"/>
+</div>
+<div>
+<fieldset>
+<legend>* Tipo de usuario:</legend>
+<input type="radio" id="rdEdmin" name="rdTipoUsuario" value="admin"/>
+<label for="admin">
+Administrador
+</label>
+<input type="radio" id="rdcomum" name="rdtipousuario" value="comum"/>
+<label for="comum">
+Usuario Comum
+</label>
+</fieldset>
+</div>
+<div>
+<fieldset>
+<legend>* Preferencias:</legend>
+<input type="checkbox" id="ckEmail" name="ckPreferencias" value="email"/>
+<label for="ckEmail">
+Receber novidades por EMAIL
+</label>
+<input type="checkbox" id="ckeSms" name="ckPreferencias" value="sms"/>
+<label for="ckSms">
+Receber novidades por SMS
+</label>
+</fieldset>
+</div>
+<div>
+<label for="estudo">
+* Anos de estudo:
+</label>
+<input type="number" id="txtEstudo" min="0" max="40">
+</div>
+<div>
+<label for="slGenero">
+* Genero:
+</label>
+<select id="slGenero">
+<option value="">
+Selecione...
+</option>
+<option value="F">
+Feminino
+</option>
+<option value="m">
+Masculino
+</option>
+<option value="n">
+Prefiro não informar
+</option>
+</select>
+</div>
+<div>
+<label for="flFoto">
+* Foto de Perfil:
+</label>
+<input type="file" id="flFoto">
+</div>
+<div>
+<label for="txtObs">
+* Observação:
+</label>
+<textarea id="txtObs" rows="2" cols="30"></textarea>
+</div>
+<div>
+<button type="submit" id="btnCadastrar">CADASTRAR</button>
+</div>
+
+</form>
+
+<script type="module" src="dist/cadUsuario.js"></script>
+<a href="gestaoUsuarios.html" class="btn-voltar">VOLTAR</a>
+</body>
+</html>
