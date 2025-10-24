@@ -1,6 +1,6 @@
 const formCadUsuario = document.getElementById("formCadUsuario") as HTMLFormElement;
 const txtNome = document.getElementById("txtNome") as HTMLInputElement;
-const txtEmail = document.getElementById("txtEmail") as HTMLInputElement;
+const tx                                tEmail = document.getElementById("txtEmail") as HTMLInputElement;
 const txtSenha = document.getElementById("txtSenha") as HTMLInputElement;
 const txtConfSenha = document.getElementById("txtConfSenha") as HTMLInputElement;
 const txtTelefone = document.getElementById("txtTelefone") as HTMLInputElement;

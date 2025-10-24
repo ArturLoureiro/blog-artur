@@ -43,7 +43,6 @@ alterarAdm(adm.id);
 
 linha.insertCell().appendChild(btnAlterar);
 });
-
 }
 
 function excluirAdm(id: string){
@@ -52,7 +51,6 @@ if (confirm ("Deseja Realmente Excluir Este Registro?")) {
 Administrador.excluir(id);
 carregarTabela();
 }
-
 }
 
 function alterarAdm(id: string){

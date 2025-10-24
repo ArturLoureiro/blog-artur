@@ -7,7 +7,6 @@ constructor (
 public nome: string,
 public valor: number,
 )
-
 {
     
 this.id = crypto.randomUUID();
@@ -34,5 +33,4 @@ let listaProduto: Produto[] = JSON.parse(localStorage.getItem("listaProduto") ||
 listaProduto = listaProduto.filter((produto: Produto) => produto.id !== id);
 localStorage.setItem("listaProduto", JSON.stringify(listaProduto));
 }
-
 }
